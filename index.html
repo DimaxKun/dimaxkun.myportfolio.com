@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="curtain">
+      <h1 class="curtain-text">My Portfolio</h1>
+    </div>
+
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li><a href="#about-me">Home</a></li>
+        <li><a href="#info-myself">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">
+        <span><i class="fa-solid fa-circle-half-stroke"></i></span>
+        <span>Mode</span>
+      </button>
+    </nav>    
+
+    <section id="about-me" class="welcome-section">
+      <div class="container">
+        <img class="bio-photo slide-in" src="images/biopicture.JPG" alt="Mohammad Ali Dimacaling">
+        <div>
+          <h1 class="slide-in">Hey! I'm <span class="intro">Mohammad Ali Dimacaling</span></h1>
+          <div class="section slide-in">
+            <h3>About Me</h3>
+            <p class="about-desc">Aspiring developer navigating through the exciting world of programming, one line of code at a time. Currently a student with a burning passion for web technology and development. Each error message is a new learning opportunity, and every successful compile is a small victory.</p>
+          </div>
+          <div class="section slide-in">
+            <h3>Future Goals and Aspirations</h3>
+            <p class="about-desc">Looking towards the future, I am driven by a strong commitment to making a positive impact on the world around me. With a vision for innovation and a desire to empower others, I aspire to lead initiatives that drive social change, foster inclusive communities, and create opportunities for growth and prosperity for all.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+<section id="info-myself" class="welcome-section">
+  <h2 class="projects-section-header slide-down">More About Me:</h2>
+  <div class="projects-grid">
+    <a href="project/resume.html" target="_self" class="project project-tile slide-down">
+      <img
+        class="project-image"
+        src="images/resume.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        <b>Resume</b>
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a href="project/skills.html" target="_self" class="project project-tile slide-down">
+      <img
+        class="project-image"
+        src="images/skills.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        <b>Skills</b>
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a href="project/interests-hobbies.html" target="_self" class="project project-tile slide-down">
+      <img
+        class="project-image"
+        src="images/hobby.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        <b>Interests & Hobbies</b>
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+  </div>
+</section>
+
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header slide-down">Some of my works:</h2>
+      <div class="projects-grid">
+          <a href="https://dimaxkun.github.io/dimaxkun.myrecipepage.io/" target="_self" class="project project-tile">
+            <img
+            class="project-image"
+            src="images/recipe.png"
+            alt="project"
+          />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              <b>Recipe Book Page</b>
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        <a href="project/Bebekeks_FlexboxChallenge.html" target="_self" class="project project-tile">
+          <img
+            class="project-image"
+            src="images/flexbox.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            <b>Flexbox: Doraemon Wiki</b>
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        
+        <a href="https://dimaxkun.github.io/dimaxkun.myanimesurvey.io/" target="_self" class="project project-tile">
+          <img
+            class="project-image"
+            src="images/survey-1.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            <b>Responsive Survey</b>
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header slide-in">
+        <h2>You can contact me...</h2>
+      </div>
+      <div class="contact-links fade-in">
+        <a
+          href="https://www.facebook.com/mohammadali.dimacaling.58"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fa-brands fa-facebook"></i></a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fa-brands fa-square-twitter"></i></a>
+        <a 
+          href="https://mail.google.com/mail/u/0/#inbox?compose=new" 
+          target="_blank"
+          class="btn contact-details"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    <footer>
+      <p> &copy; Created by Mohammad Ali Dimacaling</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

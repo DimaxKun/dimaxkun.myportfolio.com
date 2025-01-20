@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, #FEFBF6, #B67352, #8CB9BD);
+        }
+    
+        header {
+            background-color: #004c53; 
+            color: white; 
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            margin-top: 90px;
+            background-color: #F7DED0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url("bg-pattern3.png");
+        }
+
+        #curtain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1e5394;
+        z-index: 9999;
+        animation: curtainReveal 1.6s ease forwards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .curtain-text {
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Arial', sans-serif;
+        }
+
+        @keyframes curtainReveal {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+        }
+
+        h2 {   
+            text-align: center;
+            background-color: #F1FADA;
+            padding: 5px;
+            margin: 0 40px 30px  40px;
+            border-style: solid;
+            border-radius: 25px;
+            border-color: #004c53;
+        }
+
+        h3 {
+            display: inline-block;
+            background-color: #2D9596;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 0;
+            color: white;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skill {
+            margin: 10px;
+            text-align: center;
+            width: calc(50% - 20px);
+        }
+
+        .skill-name {
+            margin-top: 0;
+            font-weight: bold;
+            background-color: #B67352;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .description {
+            background-color: #e0ffe6;
+            padding: 5px;
+            border-radius: 10px;
+            margin-top: 0;
+            text-align: left;
+            margin-bottom: 20px;
+            border-style: solid;
+            border-color: #B67352;
+            border-width: 3px;
+        }
+
+        /* CSS for responsiveness */
+        @media only screen and (max-width: 768px) {
+            h2 {
+                margin: 0 20px 20px 20px;
+                font-size: 25px;
+            }
+            .skill {
+                width: calc(50% - 20px);
+            }
+
+            .skill img {
+                width: 100%;
+                height: auto; 
+                max-width: 100%; 
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h2 {
+                margin: 0 20px 20px 20px;
+                font-size: 20px;
+            }
+            .skill {
+                width: 100%;
+            }
+
+            .skill img {
+                width: 100%; 
+                height: auto; 
+                max-width: 100%; 
+            }
+        }
+
+        .skill img {
+            width: 300px; 
+            height: 200px; 
+            object-fit: cover; 
+            border: 3px solid #008e9b;
+            border-radius: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>SKILLS</header>
+    <div id="curtain">
+        <h5 class="curtain-text">My Portfolio</h5>
+    </div>
+    <div class="container">
+        <h2>The following are my technical & inter/intrapersonal skills.</h2>
+        <div class="skills">
+            <div class="skill">
+                <img src="codings.webp" alt="codings">
+                <div class="skill-name">Python, Java, HTML, & CSS Knowledge</div>
+                <div class="description">Knowledge in these programming languages, I am capable of developing robust softwares and dynamic web content with precision and efficiency.</div>
+            </div>
+            <div class="skill">
+                <img src="microsoft.avif" alt="microsoft">
+                <div class="skill-name">Word, Excel, & PowerPoint Proficiency</div>
+                <div class="description">Proficiency in utilizing Microsoft applications, adept at creating professional documents, managing data effectively, and delivering impactful presentations.</div>
+            </div>
+            <div class="skill">
+                <img src="communication.jpg" alt="communication">
+                <div class="skill-name">Communication Skills</div>
+                <div class="description">I excel in articulating ideas with clarity and empathy, fostering meaningful connections and understanding in diverse contexts.</div>
+            </div>
+            <div class="skill">
+                <img src="leadership.jpg" alt="leadership">
+                <div class="skill-name">Leadership Skills</div>
+                <div class="description">With a visionary approach and the ability to inspire and empower others, I lead by example, driving teams toward shared goals.</div>
+            </div>
+            <div class="skill">
+                <img src="collaboration.png" alt="collaboration">
+                <div class="skill-name">Collaboration Skills</div>
+                <div class="description">I thrive in fostering a collaborative environment to achieve a collective success through effective teamwork and cooperation.</div>
+            </div>
+            <div class="skill">
+                <img src="time-mngmnt.webp" alt="time-management">
+                <div class="skill-name">Time Management Skills</div>
+                <div class="description">Through strategic prioritization, I adeptly manage tasks and deadlines, optimizing efficiency and productivity while maintaining quality outcomes.</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const curtain = document.getElementById('curtain');
+        
+            curtain.addEventListener('animationend', () => {
+            curtain.style.display = 'none';
+            });
+        });
+        </script>
+</body>
+</html>

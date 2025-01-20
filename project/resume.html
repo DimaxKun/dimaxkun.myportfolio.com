@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, #9AD0C2, #265073);
+        }
+        header {
+            background-color: #35374B; 
+            color: white; 
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            margin-top: 90px;
+            background-color: #F7DED0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url("bg-pattern2.png");
+        }
+        .bio-photo {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 5px solid #2D9596;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            height: auto;
+            max-height: 350px; /* Limits image height */
+            width: auto;
+        }
+
+        #curtain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1e5394;
+        z-index: 9999;
+        animation: curtainReveal 1.6s ease forwards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .curtain-text {
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Arial', sans-serif;
+        }
+
+        @keyframes curtainReveal {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #F1FADA;
+            padding: 5px;
+            margin: 0 100px 50px  100px;
+            border-style: solid;
+            border-radius: 25px;
+            border-color: #35374B;
+        }
+        h2 {
+            background-color: #2D9596;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 50px;
+            font-weight: bold;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+            background-color: #F1FADA;
+            border-style: solid;
+            padding: 10px;
+            border-radius: 10px;
+            border-color: #35374B;
+        }
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 10px; 
+            }
+            ul {
+                padding-left: 50px;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .container {
+                padding: 5px;
+            }
+
+            h1 {
+                margin: 0 20px 20px 20px;
+                font-size: 23px;
+            }
+
+            ul {
+                padding-left: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>RESUME</header>
+    <div id="curtain">
+        <h5 class="curtain-text">My Portfolio</h5>
+    </div>
+    <div class="container">
+        <img class="bio-photo" src="mohammad-pfp.jpg" alt="Mohammad Ali Dimacaling">
+        <h1>Mohammad Ali Mangoda Dimacaling</h1>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><h3>Undergraduate:</h3> Bachelor of Science in Information Technology - Major in Web Technology <h4>University of the Cordilleras</h4> </li>
+                <li><h3>Senior High School:</h3> Science, Technology, Engineering, & Mathematics Strand <h4>University of the Cordilleras</h4></li>
+                <li><h3>Junior High School:</h3> San Vicente National High School</li>
+                <li><h3>Primary:</h3> San Vicente Elementary School</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Skills & Qualifications</h2>
+            <ul>
+                <li>Knowledgeable in programming language: Java, Python</li>
+                <li>Web Design knowledge: HTML & CSS</li>
+                <li>Microsoft Office Proficiency: Word, PowerPoint, Excel</li>
+                <li>Excellent verbal and written communication</li>
+                <li>Strong organizational skills</li>
+                <li>Ability to work independently and as part of a team</li>
+                <li>Great leadership skills</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>FreeCodeCamp Learner</li>
+                <li>Coder as an IT Student</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Membership</h2>
+            <ul>
+                <li>Member, Information and Communications Technology Community</li>
+                <li>University of the Cordilleras, Baguio City</li>
+                <li>August 2022 - present</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Interests</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Web Design</li>
+                <li>Arts & Craft</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Address: #150 Bayuya St., San Vicente, Baguio City</li>
+                <li>Email: dimacalingmohammadali@gmail.com</li>
+                <li>Phone: 0960 3230 355</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const curtain = document.getElementById('curtain');
+    
+        curtain.addEventListener('animationend', () => {
+        curtain.style.display = 'none';
+        });
+    });
+    </script>
+</body>
+</html>
